@@ -3,22 +3,22 @@
   "name": "Nauan - Desenvolvedor Web Front-end Back-end - Tubarão/SC - Brasil",
   "icons": [
     {
-      "src": "launcher-icon-2x.png",
+      "src": "launcher-icon-2x.jpg",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
-      "src": "launcher-icon-3x.png",
+      "src": "launcher-icon-3x.jpg",
       "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/jpg"
     },
     {
-      "src": "launcher-icon-4x.png",
+      "src": "launcher-icon-4x.jpg",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/jpg"
     }
   ],
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "orientation": "landscape"
 }

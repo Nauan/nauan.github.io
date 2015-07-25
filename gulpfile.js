@@ -13,7 +13,15 @@ uncss       = require('gulp-uncss');
 gulp.task('styles', function() {
   gulp.src('Source/assets/css/*.css')
   .pipe(uncss({
-    html: ['index.html']
+    html: ['index.html'],
+    ignore: [
+            ".fade",
+            ".fade.in",
+            ".collapse",
+            ".collapse.in",
+            ".collapsing",
+            /\.open/
+       ]
   }))
   .pipe(minifycss())
   .pipe(concat('main.css'))
