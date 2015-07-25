@@ -23,6 +23,7 @@ gulp.task('scripts', function() {
   gulp.src(
     [
       'Source/assets/javascript/jquery.js',
+      'Source/assets/javascript/jquery.easing.js',
       'Source/assets/javascript/bootstrap.js',
       'Source/assets/javascript/cbpAnimatedHeader.js',
       'Source/assets/javascript/classie.js',
