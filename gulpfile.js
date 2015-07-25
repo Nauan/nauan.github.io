@@ -4,13 +4,15 @@ minifycss   = require('gulp-minify-css'),
 uglify      = require('gulp-uglify'),
 imagemin    = require('gulp-imagemin'),
 concat      = require('gulp-concat'),
-livereload  = require('gulp-livereload');
+livereload  = require('gulp-livereload'),
+purify      = require('gulp-purifycss');
 
 // Make the tasks using the plugins installed
 
 // Styles tasks
 gulp.task('styles', function() {
   gulp.src('Source/assets/css/*.css')
+  .pipe(purify(['./**/*.js', './**/*.html']))
   .pipe(minifycss())
   .pipe(concat('main.css'))
   .pipe(gulp.dest('Production/assets/css/'))
