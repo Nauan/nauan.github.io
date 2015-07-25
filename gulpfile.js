@@ -5,14 +5,16 @@ uglify      = require('gulp-uglify'),
 imagemin    = require('gulp-imagemin'),
 concat      = require('gulp-concat'),
 livereload  = require('gulp-livereload'),
-purify      = require('gulp-purifycss');
+uncss       = require('gulp-uncss');
 
 // Make the tasks using the plugins installed
 
 // Styles tasks
 gulp.task('styles', function() {
   gulp.src('Source/assets/css/*.css')
-  .pipe(purify(['./**/*.js', './**/*.html']))
+  .pipe(uncss({
+    html: ['index.html']
+  }))
   .pipe(minifycss())
   .pipe(concat('main.css'))
   .pipe(gulp.dest('Production/assets/css/'))
