@@ -4,7 +4,6 @@ minifycss   = require('gulp-minify-css'),
 uglify      = require('gulp-uglify'),
 imagemin    = require('gulp-imagemin'),
 concat      = require('gulp-concat'),
-del         = require('del'),
 livereload  = require('gulp-livereload');
 
 // Make the tasks using the plugins installed
@@ -51,11 +50,6 @@ gulp.task('fonts', function () {
   .pipe(livereload());
 });
 
-// Clean files
-gulp.task('clean', function(cb) {
-  del(['Production/assets/css', 'Production/assets/javascript', 'Production/assets/images', 'Production/assets/fonts'], cb)
-});
-
 // Watch task
 gulp.task('watch', function() {
   var server = livereload();
@@ -67,4 +61,4 @@ gulp.task('watch', function() {
 // The task that you've named of 'default' (like the one bellow), will run with the command: gulp
 
 // Default task
-gulp.task('default', ['clean', 'styles', 'scripts', 'img', 'fonts', 'watch']);
+gulp.task('default', ['styles', 'scripts', 'img', 'fonts', 'watch']);
