@@ -15,12 +15,14 @@ gulp.task('styles', function() {
   .pipe(uncss({
     html: ['index.html'],
     ignore: [
+            ".navbar-shrink",
             ".fade",
             ".fade.in",
             ".collapse",
             ".collapse.in",
             ".collapsing",
-            /\.open/
+            /\.open/,
+            /\.navbar-shrink/
        ]
   }))
   .pipe(minifycss())
