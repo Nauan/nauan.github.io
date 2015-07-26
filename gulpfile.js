@@ -21,8 +21,10 @@ gulp.task('styles', function() {
             ".collapse",
             ".collapse.in",
             ".collapsing",
+            ".active",
             /\.open/,
-            /\.navbar-shrink/
+            /\.navbar-shrink/,
+            /\.active/
        ]
   }))
   .pipe(minifycss())
