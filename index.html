@@ -281,17 +281,18 @@
         <script src="Production/assets/javascript/main.js" async defer></script>
 
         <!-- UpUp - Offline access -->
-        <script src="upup.min.js" async defer></script>
+        <script src="/upup.min.js"></script>
         <script>
             window.onload = function() {
                 UpUp.start({
-                    'content-url': 'index.html',
-                    'assets': [
-                        'Production/assets/css/main.css',
-                        'Production/assets/javascript/main.js',
+                    content: '<html><body><h1>Top Hotels in Rome</h1><p>Villa Domus</p><p>Hotel Trivelli</p></body></html>'
+                    // 'content-url': 'index.html',
+                    // 'assets': [
+                        // 'Production/assets/css/main.css',
+                        // 'Production/assets/javascript/main.js',
                         // 'Production/assets/fonts/**/*',
                         // 'Production/assets/images/**/*'
-                    ]
+                    // ]
                 });
             }
         </script>
