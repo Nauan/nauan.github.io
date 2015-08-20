@@ -49,6 +49,15 @@ gulp.task('scripts', function() {
   .pipe(concat('main.js'))
   .pipe(gulp.dest('Production/assets/javascript/'))
   .pipe(livereload());
+
+  gulp.src(
+    [
+      'Source/assets/javascript/upup.sw.min.js',
+      'Source/assets/javascript/upup.min.js'
+    ]
+  )
+  .pipe(gulp.dest('Production/assets/javascript/'))
+  .pipe(livereload());
 });
 
 // Images tasks
