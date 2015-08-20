@@ -283,15 +283,17 @@
         <!-- UpUp - Offline access -->
         <script src="Production/assets/javascript/upup.min.js" async defer></script>
         <script>
-            UpUp.start({
-                'content-url': 'index.html',
-                'assets': [
-                    'Production/assets/css/main.css',
-                    'Production/assets/javascript/main.js',
-                    'Production/assets/fonts/**',
-                    'Production/assets/images/**'
-                ]
-            });
+            window.onload = function() {
+                UpUp.start({
+                    'content-url': 'index.html',
+                    'assets': [
+                        'Production/assets/css/main.css',
+                        'Production/assets/javascript/main.js',
+                        'Production/assets/fonts/**',
+                        'Production/assets/images/**'
+                    ]
+                });
+            }
         </script>
 
         <!-- Google Analytics -->
