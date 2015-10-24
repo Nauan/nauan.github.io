@@ -19,6 +19,5 @@
     }
   ],
   "start_url": "index.html?addToHome=true",
-  "display": "standalone",
-  "orientation": "landscape"
+  "display": "standalone"
 }
