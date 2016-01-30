@@ -24,7 +24,7 @@ a,
 a:hover,
 a:active,
 a.active {
-    color: #2196F3;
+    color: #3A4750;
     text-decoration: none;
     transition: all ease .5s;
 }
@@ -34,10 +34,14 @@ a.active {
     margin: 0 auto;
 }
 
+.img-border-radius {
+    border-radius: 5px;
+}
+
 header {
     text-align: center;
     color: #FFFFFF;
-    background: #2196F3;
+    background: #3A4750;
 }
 
 header .container {
@@ -130,7 +134,7 @@ section h2 {
 
 section.success {
     color: #FFFFFF;
-    background: #1976D2;
+    background: #00ADB5;
 }
 
 @media(max-width:767px) {
@@ -160,7 +164,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(33, 150, 243, 0.95);
+    background: rgba(0, 173, 181, 0.95);
     transition: all ease .5s;
 }
 
@@ -199,19 +203,21 @@ section.success {
 }
 
 .btn-outline {
-    margin-top: 15px;
-    border: solid 2px #fff;
-    font-size: 20px;
-    color: #fff;
     background: 0 0;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    max-width: 100%;
     transition: all .3s ease-in-out;
+    white-space: normal;
 }
 
 .btn-outline:hover,
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #2196F3;
+    color: #3A4750;
     background: #fff;
 }
 
@@ -261,7 +267,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #2196F3;
+    color: #3A4750;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -282,7 +288,7 @@ footer .icon:before {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2196F3;
+    background-color: #3A4750;
 }
 
 footer .footer-col {
@@ -365,7 +371,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #1976D2;
+    background-color: #00ADB5;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -375,7 +381,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #1976D2;
+    background-color: #00ADB5;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
