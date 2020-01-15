@@ -21,7 +21,7 @@
 	<title>Nauan - Front-end & Design</title>
 </head>
 
-<body id="page-top" class="index" onload="noBack();"onpageshow="if (event.persisted) noBack();" onunload="">
+<body id="page-top" class="index">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header page-scroll">
@@ -422,21 +422,6 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-56175003-1', 'auto');
 		ga('send', 'pageview');
-	</script>
-
-	<!-- Modal Back Button -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.modal').on('show.bs.modal', function(e) {
-				window.location.hash = "modal";
-			});
-
-			$(window).on('hashchange', function (event) {
-				if(window.location.hash != "#modal") {
-					$('.modal').modal('hide');
-				}
-			});
-		});
 	</script>
 </body>
 </html>
