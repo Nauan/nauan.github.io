@@ -426,6 +426,7 @@
 
 	<!-- Modal Back Button -->
 	<script type="text/javascript">
+		$(document).ready(function() {
 			$('.modal').on('show.bs.modal', function(e) {
 				window.location.hash = "modal";
 			});
@@ -435,6 +436,7 @@
 					$('.modal').modal('hide');
 				}
 			});
+		});
 	</script>
 </body>
 </html>
