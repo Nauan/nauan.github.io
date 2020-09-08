@@ -48,9 +48,11 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-md-4">
 					<img class="img-responsive img-profile" src="Production/assets/images/profile.jpeg" alt="Nauan">
+				</div>
 
+				<div class="col-md-4">
 					<div class="intro-text" itemscope itemtype="http://schema.org/Person">
 						<h1 class="name" itemprop="givenName">Nauan</h1>
 						<h2>Front-end & Design</h2>
@@ -63,13 +65,13 @@
 	<section class="success" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12">
 					<h2>About me</h2>
 					<br>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-12">
 					<p>
 						I work with Design & Software Development. I like to work more with Front-end and Design. Besides that, I love playing videogames, writing to create stories or pass some knowledge.
 						Studying software development and design since 2013 and working with It since 2014.
@@ -82,7 +84,7 @@
 	<section id="portfolio" class="section-cards">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 text-center">
+				<div class="col-lg-12">
 					<h2>Portfolio</h2>
 				</div>
 			</div>
@@ -90,8 +92,40 @@
 			<br>
 
 			<div class="row">
-				<div class="col-lg-12 text-center portfolio-subtitle">
+				<div class="col-lg-12 portfolio-subtitle">
 					<h3>Front-end, Back-end & Design</h3>
+				</div>
+
+				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/WebSite">
+					<a href="" class="section-cards-link" data-toggle="modal" data-target="#modal-tecsinapse" itemprop="url">
+						<img src="Production/assets/images/portfolio/Tecsinapse.jpg" class="img-responsive" alt="Tecsinapse (Front-end, Back-end & Design (UI Wireframe + UX))" itemprop="image">
+						<div class="section-cards-link-description">
+							<b>Tecsinapse</b>
+							<br>
+							Front-end, Back-end & Design (UI Wireframe + UX)
+							<br>
+							Website | 2020
+						</div>
+					</a>
+				</div>
+				<div class="modal fade" id="modal-tecsinapse" tabindex="-1" role="dialog" aria-labelledby="modal-tecsinapse-label" aria-hidden="true" style="display:none">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">x</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<h2>Tecsinapse Website</h2>
+								<img class="lazy-load" data-src="Production/assets/images/portfolio/Tecsinapse/mockup-desktop.jpg" />
+								<h3>Website Screenshot (View live <a href="https://tecsinapse.com.br" class="link-reverse" target="_blank">here</a>):</h3>
+								<img class="lazy-load" data-src="Production/assets/images/portfolio/Tecsinapse/final-layout-print-desktop.png" />
+								<h3>Wireframe Screenshot:</h3>
+								<img class="lazy-load" data-src="Production/assets/images/portfolio/Tecsinapse/print-desktop-wireframe.png" />
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/WebSite">
@@ -157,7 +191,9 @@
 						</div>
 					</div>
 				</div>
+			</div>
 
+			<div class="row">
 				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/Product">
 					<a href="" class="section-cards-link" data-toggle="modal" data-target="#modal-di-napoli-pizzeria " itemprop="url">
 						<img src="Production/assets/images/portfolio/Di Napoli Pizzeria.png" class="img-responsive" alt="Di Napoli Pizzeria Design (Branding))" itemprop="image">
@@ -195,9 +231,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
 				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/WebSite">
 					<a href="" class="section-cards-link" data-toggle="modal" data-target="#modal-hostellerie-la-montagne" itemprop="url">
 						<img src="Production/assets/images/portfolio/Hostellerie La Montagne.png" class="img-responsive" alt="Hostellerie La Montagne (Website - Front-end & Back-end)" itemprop="image">
@@ -221,7 +255,7 @@
 							<div class="modal-body">
 								<h2>Hostellerie La Montagne Website</h2>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/Hostellerie La Montagne/mockup-desktop.jpg" />
-								<h3>Website Screenshot (View live <a class="link-reverse" href="https://www.hostellerielamontagne.com/">here</a>):</h3>
+								<h3>Website Screenshot (View live <a class="link-reverse" href="https://www.hostellerielamontagne.com/" target="_blank">here</a>):</h3>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/Hostellerie La Montagne/print-desktop.jpg" />
 							</div>
 						</div>
@@ -251,13 +285,15 @@
 							<div class="modal-body">
 								<h2>Prolincon Website</h2>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/Prolincon/mockup-desktop.jpg" />
-								<h3>Website Screenshot (View live <a class="link-reverse" href="http://prolincon.com.br">here</a>):</h3>
+								<h3>Website Screenshot (View live <a class="link-reverse" href="http://prolincon.com.br" target="_blank">here</a>):</h3>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/Prolincon/print-desktop.jpg" />
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
+			<div class="row">
 				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/WebSite">
 					<a href="" class="section-cards-link" data-toggle="modal" data-target="#modal-pct-chat" itemprop="url">
 						<img src="Production/assets/images/portfolio/PCT Chat - Tecmedia.png" class="img-responsive" alt="PCT Chat - Tecmedia (Website - Front-end, Back-end & Design (UI/UX))" itemprop="image">
@@ -281,15 +317,13 @@
 							<div class="modal-body">
 								<h2>PCT Chat Website</h2>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/PCT Chat - Tecmedia/mockup-desktop.jpg" />
-								<h3>Website Screenshot (View live <a class="link-reverse" href="https://pctchat.com.br/">here</a>):</h3>
+								<h3>Website Screenshot (View live <a class="link-reverse" href="https://pctchat.com.br/" target="_blank">here</a>):</h3>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/PCT Chat - Tecmedia/print-desktop.jpg" />
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="row">
 				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/WebSite">
 					<a href="" class="section-cards-link" data-toggle="modal" data-target="#modal-criobras" itemprop="url">
 						<img src="Production/assets/images/portfolio/Criobrás - Gases.png" class="img-responsive" alt="Criobrás - Gases (Website - Front-end, Back-end & Design (UI/UX))" itemprop="image">
@@ -313,7 +347,7 @@
 							<div class="modal-body">
 								<h2>Criobrás Website</h2>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/Criobrás - Gases/mockup-desktop.jpg" />
-								<h3>Website Screenshot (View live <a class="link-reverse" href="http://criobras.com.br/">here</a>):</h3>
+								<h3>Website Screenshot (View live <a class="link-reverse" href="http://criobras.com.br/" target="_blank">here</a>):</h3>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/Criobrás - Gases/print-desktop.jpg" />
 							</div>
 						</div>
@@ -343,7 +377,7 @@
 							<div class="modal-body">
 								<h2>FTC Website</h2>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/FTC/mockup-desktop.jpg" />
-								<h3>Website Screenshot (View live <a class="link-reverse" href="http://ftc.com.br/">here</a>):</h3>
+								<h3>Website Screenshot (View live <a class="link-reverse" href="http://ftc.com.br/" target="_blank">here</a>):</h3>
 								<img class="lazy-load" data-src="Production/assets/images/portfolio/FTC/print-desktop.jpg" />
 							</div>
 						</div>
@@ -352,7 +386,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-lg-12 text-center portfolio-subtitle">
+				<div class="col-lg-12 portfolio-subtitle">
 					<h3>Tech articles</h3>
 				</div>
 			
@@ -397,7 +431,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-lg-12 text-center portfolio-subtitle">
+				<div class="col-lg-12 portfolio-subtitle">
 					<h3>Gaming & Entertainment articles</h3>
 				</div>
 				<div class="col-sm-4 section-cards-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
@@ -464,28 +498,26 @@
 		</div>
 	</section>
 
-	<footer id="contact" class="text-center">
+	<footer id="contact">
 		<div class="footer-above">
 			<div class="container">
-				<div class="row">
-					<div class="footer-col col-md-12">
-						<h2>
-							Contact me at <a href="mailto:nauanbarreto@gmail.com" class="link-reverse">gmail</a>
-							or find me on social:
-						</h2>
+				<div class="footer-col col-md-12">
+					<h2>
+						Contact me at <a href="mailto:nauanbarreto@gmail.com" class="link-reverse">gmail</a>
+						or find me on social.
+					</h2>
 
-						<ul class="list-inline">
-							<li>
-								<a href="https://br.linkedin.com/in/nauan" class="btn-social btn-outline"><i class="icon icon-linkedin"></i></a>
-							</li>
-							<li>
-								<a href="https://twitter.com/NauanBarreto" class="btn-social btn-outline"><i class="icon icon-twitter"></i></a>
-							</li>
-							<li>
-								<a href="https://github.com/nauan" class="btn-social btn-outline"><i class="icon icon-github"></i></a>
-							</li>
-						</ul>
-					</div>
+					<ul class="list-inline">
+						<li>
+							<a target="_blank" href="https://br.linkedin.com/in/nauan" class="btn-social btn-outline"><i class="icon icon-linkedin"></i></a>
+						</li>
+						<li>
+							<a target="_blank" href="https://twitter.com/NauanBarreto" class="btn-social btn-outline"><i class="icon icon-twitter"></i></a>
+						</li>
+						<li>
+							<a target="_blank" href="https://github.com/nauan" class="btn-social btn-outline"><i class="icon icon-github"></i></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
